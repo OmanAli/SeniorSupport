@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\DonationMail;
 use App\Models\DonateHero;
 use App\Models\DonateForm;
 use App\Models\DonateWhyDonate;
@@ -15,7 +16,7 @@ use App\Models\DonateDonorRecognitionCard;
 use App\Models\DonationSubmission;
 use App\Models\DonateFormExtraText;
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\Mail;
 
 class DonateController extends Controller
 {
@@ -62,18 +63,16 @@ class DonateController extends Controller
             'email' => 'required|email',
             'amount' => 'required|numeric|min:1',
             'message' => 'nullable|string',
-            'form_location' => 'required|in:top,bottom',
         ]);
 
-        DonationSubmission::create([
+        $data=DonationSubmission::create([
             'name' => $request->name,
             'phone' => $request->phone,
             'email' => $request->email,
             'amount' => $request->amount,
             'message' => $request->message,
-            'form_location' => $request->form_location,
         ]);
-
+        Mail::to('Consultingseniorsolutions@gmail.com')->send(new DonationMail($data));
         return redirect()->back()->with('success', 'Thank you for your donation! We will contact you soon.');
     }
 }

@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\PlacementRequest as MailPlacementRequest;
 use Illuminate\Http\Request;
 use App\Models\PlacementRequest;
 use App\Models\PlacementRequestBanner;
+use Illuminate\Support\Facades\Mail;
 
 class PlacementRequestController extends Controller
 {
@@ -17,7 +19,7 @@ class PlacementRequestController extends Controller
         return view('placement-request', compact('banner'));
     }
 
-    
+
     public function store(Request $request)
     {
         $request->validate([
@@ -30,8 +32,8 @@ class PlacementRequestController extends Controller
             'message'=>'required|string',
         ]);
 
-        PlacementRequest::create($request->all());
-
+        $data=PlacementRequest::create($request->all());
+        Mail::to('Consultingseniorsolutions@gmail.com')->send(new MailPlacementRequest($data));
         return redirect()->back()->with('success', 'Placement request submitted successfully!');
     }
 
