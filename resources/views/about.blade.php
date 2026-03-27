@@ -104,7 +104,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12 mb-lg-0 mb-md-0 mb-3">
-                    <h2 data-aos="fade-up">Welcome to Senior<span class="support">Support</span></h2>
+                    <h2 data-aos="fade-up">Welcome to Senior<span class="support"> Support</span></h2>
                     <p>{{ $welcome->description ??
                         'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
                                             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit

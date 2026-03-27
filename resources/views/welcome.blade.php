@@ -215,8 +215,8 @@
                                     class="fa-sharp fa-solid fa-location-dot icon4"></i>
                             </div>
                         </div>
-                        <div class="banner-btn discover-btn-banner">
-                            <a href="about.html" class="text-decoration-none">Book Now</a>
+                         <div class="banner-btn discover-btn-banner">
+                            <a href="#" class="text-decoration-none" style="background-color: white;color:#BB8EE0">Book Now</a>
                         </div>
                     </form>
                 </div>

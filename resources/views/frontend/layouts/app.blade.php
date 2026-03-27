@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SeniorSupport|@yield('title')</title>
+    <title>Senior Support|@yield('title')</title>
     <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('assets/images/favicons/favicon.png') }}">
     <link rel="manifest" href="https://html.designingmedia.com/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
@@ -18,7 +18,7 @@
     <link href="{{ asset('assets/unpkg.com/aos%402.3.1/dist/aos.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/css/owl.carousel.min.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('assets/css/owl.theme.default.min.css') }}" rel="stylesheet" type="text/css">
-    @stack('styles') 
+    @stack('styles')
 </head>
 
 <body>

@@ -8,7 +8,8 @@
                              src="{{ asset('assets/images/logo.png') }}" alt="" class="img-fluid"
                              style="border-radius: 12px"></a>
                  </figure>
-                 <p class="footer-text">Copyright © {{ date('Y') }} Senior Support. All Rights Reserved.</p>
+                 <p class="footer-text">Copyright © {{ date('Y') }} Senior Support. All Rights Reserved. <br>
+                <span style="color: black;"><b>A Registered 501(c)(3) nonprofit organization</b></span></p>
                  <div class="social-icons text-center">
                      <ul class="list-unstyled">
                          <li><a href="#" class="text-decoration-none"><i
