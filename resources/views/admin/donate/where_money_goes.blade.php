@@ -139,8 +139,8 @@
                                         </div>
 
                                         <div class="mb-3">
-                                            <label class="form-label">Icon (SVG/PNG) <span class="text-danger">*</span></label>
-                                            <input type="file" class="form-control" name="icon" accept=".svg,.png,.jpg,.jpeg" required />
+                                            <label class="form-label">Icon (WebP) <span class="text-danger">*</span></label>
+                                            <input type="file" class="form-control" name="icon" accept="image/webp" required />
                                         </div>
 
                                         <button type="submit" class="btn btn-primary">Add Card</button>

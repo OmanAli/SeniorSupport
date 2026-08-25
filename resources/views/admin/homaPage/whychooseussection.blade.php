@@ -76,7 +76,7 @@
                                                                         style="color: red;font-size: 10px;">60 × 60
                                                                         px</span>
                                                                     <input type="file" class="form-control"
-                                                                        name="icon" required />
+                                                                        name="icon" accept="image/webp" required />
                                                                 </div>
 
                                                                 <button type="submit" class="btn btn-primary">Save</button>
@@ -116,7 +116,7 @@
                                                                         style="color: red;font-size: 10px;">516 × 573
                                                                         px</span>
                                                                     <input type="file" class="form-control"
-                                                                        name="image" required />
+                                                                        name="image" accept="image/webp" required />
                                                                 </div>
 
                                                                 <button type="submit"

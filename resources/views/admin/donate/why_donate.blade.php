@@ -62,7 +62,7 @@
 
                                         <div class="mb-3">
                                             <label class="form-label">Icon <span class="text-danger">*</span> <small class="text-muted">60x60 px recommended</small></label>
-                                            <input type="file" class="form-control" name="icon" accept="image/*" required />
+                                            <input type="file" class="form-control" name="icon" accept="image/webp" required />
                                         </div>
 
                                         <button type="submit" class="btn btn-primary">Add Card</button>

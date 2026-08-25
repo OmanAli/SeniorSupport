@@ -148,7 +148,7 @@ public function VolunteerUpdateWhyUsSectionImage(Request $request)
     DB::beginTransaction();
     try {
         $request->validate([
-            'image' => 'required|image|mimes:jpeg,png,jpg,gif',
+            'image' => 'required|image|mimes:webp',
         ]);
 
         $imageRecord = VolunteerWhyUsImage::first();

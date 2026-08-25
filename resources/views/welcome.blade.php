@@ -42,7 +42,7 @@
                             <img src="{{ asset('menu/picture/' . $menuImage->image) }}" alt=""
                                 class="img-fluid">
                         @else
-                            <img src="{{ asset('assets/images/menu-section-left-img.png') }}" alt=""
+                            <img src="{{ asset('assets/images/menu-section-left-img.webp') }}" alt=""
                                 class="img-fluid">
                         @endif
                     </figure>
@@ -234,7 +234,7 @@
                         <img src="{{ asset('chooseUs/picture/' . $chooseUsPicture->picture) }}" alt=""
                             class="img-fluid">
                     @else
-                        <img src="{{ asset('assets/images/why-chooseus-img.png') }}" alt=""
+                        <img src="{{ asset('assets/images/why-chooseus-img.webp') }}" alt=""
                             class="img-fluid">
                     @endif
                 </figure>

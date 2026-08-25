@@ -110,7 +110,7 @@ public function updateWhyDonateSection(Request $request)
         'order' => 'required|integer',
         'title' => 'required|string',
         'description' => 'required|string',
-        'icon' => 'required|image|mimes:png,jpg,jpeg,svg|max:2048',
+        'icon' => 'required|image|mimes:webp|max:2048',
     ]);
 
     // Icon upload
@@ -203,7 +203,7 @@ public function updateWaysToGiveSection(Request $request)
         'order' => 'required|integer|in:1,2,3,4',
         'title' => 'required|string',
         'description' => 'required|string',
-        'icon' => 'required|image|mimes:svg,png,jpg,jpeg|max:2048',
+        'icon' => 'required|image|mimes:webp|max:2048',
     ]);
 
     // Icon upload
@@ -296,7 +296,7 @@ public function addWhereMoneyGoesCard(Request $request)
         'order' => 'required|integer|in:1,2,3,4',
         'title' => 'required|string',
         'description' => 'required|string',
-        'icon' => 'required|image|mimes:svg,png,jpg,jpeg|max:2048',
+        'icon' => 'required|image|mimes:webp|max:2048',
     ]);
 
     $iconName = time() . '_' . $request->file('icon')->getClientOriginalName();
@@ -365,7 +365,7 @@ public function addDonorRecognitionCard(Request $request)
         'order' => 'required|integer|in:1,2,3',
         'title' => 'required|string',
         'description' => 'required|string',
-        'icon' => 'required|image|mimes:svg,png,jpg,jpeg|max:2048',
+        'icon' => 'required|image|mimes:webp|max:2048',
     ]);
 
     $iconName = time() . '_' . $request->file('icon')->getClientOriginalName();

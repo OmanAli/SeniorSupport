@@ -28,7 +28,7 @@ class HomePageController extends Controller
             $request->validate([
                 'banner_heading' => 'required|string|max:255',
                 'banner_text' => 'required|string',
-                'banner_image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+                'banner_image' => 'nullable|image|mimes:webp|max:2048',
             ]);
             $banner = HomePageBanner::first();
 
@@ -60,7 +60,7 @@ class HomePageController extends Controller
                 'menu_order'       => 'required|integer',
                 'menu_title'       => 'required|string|max:255',
                 'menu_description' => 'required|string',
-                'menu_icon'        => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+                'menu_icon'        => 'required|image|mimes:webp|max:2048',
             ]);
             $menuIconPath = null;
             if ($request->hasFile('menu_icon')) {
@@ -99,7 +99,7 @@ class HomePageController extends Controller
         DB::beginTransaction();
         try {
             $request->validate([
-                'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+                'image' => 'required|image|mimes:webp|max:2048',
             ]);
             $menu = HomePageMenuPicture::first();
 
@@ -174,7 +174,7 @@ class HomePageController extends Controller
                 'order'       => 'required|integer',
                 'title'       => 'required|string|max:255',
                 'description' => 'required|string',
-                'icon'        => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+                'icon'        => 'required|image|mimes:webp|max:2048',
             ]);
             $menuIconPath = null;
             if ($request->hasFile('icon')) {
@@ -203,7 +203,7 @@ class HomePageController extends Controller
         DB::beginTransaction();
         try {
             $request->validate([
-                'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+                'image' => 'required|image|mimes:webp|max:2048',
             ]);
             $menu = HomePageChooseUsPicture::first();
 
@@ -247,7 +247,7 @@ class HomePageController extends Controller
         DB::beginTransaction();
         try {
             $request->validate([
-                'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+                'image' => 'required|image|mimes:webp|max:2048',
                 'title' => 'required|string|max:255',
                 'description' => 'required|string',
             ]);

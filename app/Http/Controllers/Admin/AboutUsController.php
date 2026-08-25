@@ -52,7 +52,7 @@ class AboutUsController extends Controller
                 'offer_order'       => 'required|integer',
                 'offer_title'       => 'required|string|max:255',
                 'offer_description' => 'required|string',
-                'offer_icon'        => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+                'offer_icon'        => 'required|image|mimes:webp|max:2048',
             ]);
             $menuIconPath = null;
             if ($request->hasFile('offer_icon')) {
@@ -120,7 +120,7 @@ class AboutUsController extends Controller
         DB::beginTransaction();
         try {
             $request->validate([
-                'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+                'image' => 'required|image|mimes:webp|max:2048',
             ]);
             $menu = AboutPageWelcomeImage::first();
 

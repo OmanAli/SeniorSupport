@@ -115,7 +115,7 @@
                         <div class="mb-3">
                             <label class="form-label">Image</label><span style="color: red">*</span>
                             <span style="color: red; font-size: 10px;">Recommended: 516 × 573 px</span>
-                            <input type="file" class="form-control" name="image" accept="image/*" required />
+                            <input type="file" class="form-control" name="image" accept="image/webp" required />
                         </div>
                         <button type="submit" class="btn btn-primary">Save</button>
                     </form>

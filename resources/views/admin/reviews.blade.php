@@ -52,7 +52,7 @@
                                                                         style="color: red;font-size: 10px;">140 × 158 px</span>
                                                                     <div class="input-group input-group-merge">
                                                                         <input type="file" class="form-control"
-                                                                            name="image" />
+                                                                            name="image" accept="image/webp" />
                                                                     </div>
                                                                 </div> --}}
                                                                 <div class="mb-3">
