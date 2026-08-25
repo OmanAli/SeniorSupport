@@ -2,7 +2,7 @@
     <div class="main-header">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light p-0">
-                <a class="navbar-brand mr-0" href="{{ url('/') }}"><img src="{{ asset('assets/images/logo.png') }}"
+                <a class="navbar-brand mr-0" href="{{ url('/') }}"><img src="{{ asset('assets/images/logo.webp') }}"
                         alt="" class="img-fluid" style="border-radius: 12px;"></a>
                 <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"

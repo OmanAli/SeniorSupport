@@ -4,6 +4,7 @@
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12 d-md-block d-sm-none">
                 <div class="header-left d-table-cell align-middle">
+                    <span><div class="phone-icon d-inline-block"><i class="fa-solid fa-hand-holding-heart"></i></div>Registered 501(c)(3) nonprofit organization</span>
                     <div class="phone-icon d-inline-block"><i class="fa-solid fa-phone-volume"></i></div>
                     <p>For a free consultation:<a href="tel:+{{systemConfig('phone') ?? 'N/A'}}" class="text-decoration-none">{{systemConfig('phone') ?? 'N/A'}}</a></p>
                 </div>

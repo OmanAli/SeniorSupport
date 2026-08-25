@@ -5,7 +5,7 @@
              <div class="col-lg-4 col-md-4 col-sm-12">
                  <figure class="sencare-logo-footer">
                      <a class="navbar-brand mr-0" href="{{ url('home') }}"><img
-                             src="{{ asset('assets/images/logo.png') }}" alt="" class="img-fluid"
+                             src="{{ asset('assets/images/logo.webp') }}" alt="" class="img-fluid"
                              style="border-radius: 12px"></a>
                  </figure>
                  <p class="footer-text">Copyright © {{ date('Y') }} Senior Support. All Rights Reserved. <br>
