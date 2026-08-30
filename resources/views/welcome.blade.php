@@ -40,10 +40,10 @@
                     <figure>
                         @if (isset($menuImage->image))
                             <img src="{{ asset('menu/picture/' . $menuImage->image) }}" alt=""
-                                class="img-fluid">
+                                class="img-fluid" width="540" height="757" loading="lazy" decoding="async">
                         @else
                             <img src="{{ asset('assets/images/menu-section-left-img.webp') }}" alt=""
-                                class="img-fluid">
+                                class="img-fluid" width="540" height="757" loading="lazy" decoding="async">
                         @endif
                     </figure>
                 </div>
@@ -56,7 +56,7 @@
                                 <div class="menu-right-section">
                                     <figure>
                                         <img src="{{ asset('menu/icons/' . $item->menu_icon) }}" alt=""
-                                            class="img-fluid">
+                                            class="img-fluid" width="60" height="60">
                                     </figure>
                                     <h5>{{ $item->menu_title }}</h5>
                                     <p>{{ $item->menu_description }}</p>
@@ -232,10 +232,10 @@
                 <figure>
                     @if (isset($chooseUsPicture->picture))
                         <img src="{{ asset('chooseUs/picture/' . $chooseUsPicture->picture) }}" alt=""
-                            class="img-fluid">
+                            class="img-fluid" width="516" height="573">
                     @else
                         <img src="{{ asset('assets/images/why-chooseus-img.webp') }}" alt=""
-                            class="img-fluid">
+                            class="img-fluid" width="516" height="573">
                     @endif
                 </figure>
             </div>
@@ -247,7 +247,7 @@
                             <div class="chooseus-content-box" data-aos="fade-up">
                                 <figure class="float-left mb-0 pt-2">
                                     <img class="img-fluid" src="{{ asset('chooseUs/icons/' . $item->icon) }}"
-                                        alt="">
+                                        alt="" width="60" height="60">
                                 </figure>
                                 <div class="chooseus-content-box-content float-left">
                                     <h4 class="chooseus-title">{{ $item->title }}</h4>

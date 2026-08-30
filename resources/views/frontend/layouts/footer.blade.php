@@ -5,8 +5,8 @@
              <div class="col-lg-4 col-md-4 col-sm-12">
                  <figure class="sencare-logo-footer">
                      <a class="navbar-brand mr-0" href="{{ url('home') }}"><img
-                             src="{{ asset('assets/images/logo.webp') }}" alt="" class="img-fluid"
-                             style="border-radius: 12px"></a>
+                             src="{{ asset('assets/images/logo.webp') }}" alt="" class="img-fluid" width="179"
+                             height="58" style="border-radius: 12px"></a>
                  </figure>
                  <p class="footer-text">Copyright © {{ date('Y') }} Senior Support. All Rights Reserved. <br>
                 <span style="color: black;"><b>A Registered 501(c)(3) nonprofit organization</b></span></p>
